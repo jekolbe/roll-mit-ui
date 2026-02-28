@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-charcoal-blue: #2f4858;
+  --color-baltic-blue: #33658a;
+  --color-sky-reflection: #86bbd8;
+  --color-honey-bronze: #f6ae2d;
+  --color-blaze-orange: #f26419;
+
+  --color-charcoal-blue-100: #e6e9eb;
+  --color-charcoal-blue-200: #c1c9ce;
+  --color-charcoal-blue-300: #9caab1;
+  --color-charcoal-blue-400: #778a94;
+  --color-charcoal-blue-500: #2f4858;
+  --color-charcoal-blue-600: #2a414f;
+  --color-charcoal-blue-700: #253946;
+  --color-charcoal-blue-800: #20323e;
+  --color-charcoal-blue-900: #1b2a35;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-charcoal-blue bg-white;
+  }
+}
+
+.mat-icon {
+  font-family: 'Material Icons' !important;
+}

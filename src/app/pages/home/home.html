@@ -1,0 +1,122 @@
+<main>
+  <!-- Hero Section -->
+  <section class="relative bg-charcoal-blue text-white py-24 overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="/hero-cyclists.jpg" alt="People on bicycles smiling and having fun cycling together"
+        class="w-full h-full object-cover object-[10%_30%]">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+        Roll Mit <span class="text-honey-bronze">2026</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10">
+        Das große Fahrrad-Event in Freiburg. Gemeinsam setzen wir ein Zeichen für die Mobilitätswende.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button mat-flat-button color="primary"
+          class="!bg-honey-bronze !text-charcoal-blue !px-8 !py-6 !text-lg !rounded-full" routerLink="/ueber">
+          Mehr erfahren
+        </button>
+        <button mat-stroked-button
+          class="!border-white !text-white !px-8 !py-6 !text-lg !rounded-full hover:!bg-white/10"
+          routerLink="/mithelfen">
+          Mithelfen
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-charcoal-blue mb-6">Wann & Wo?</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="bg-sky-reflection/20 p-3 rounded-xl h-fit">
+                <mat-icon class="text-baltic-blue">event</mat-icon>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">14. Juni 2025</h3>
+                <p class="text-charcoal-blue-400">Markiere dir den Termin im Kalender!</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="bg-honey-bronze/20 p-3 rounded-xl h-fit">
+                <mat-icon class="text-blaze-orange">location_on</mat-icon>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">Freiburg im Breisgau</h3>
+                <p class="text-charcoal-blue-400">Startpunkt wird noch bekannt gegeben.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="bg-blaze-orange/20 p-3 rounded-xl h-fit">
+                <mat-icon class="text-blaze-orange">flag</mat-icon>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">Auftakt zum Stadtradeln</h3>
+                <p class="text-charcoal-blue-400">Vom 14. Juni bis 5. Juli 2025.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden shadow-2xl rotate-2">
+          <img src="/info-cyclists-drone.jpg"
+            alt="Drohnenaufnahme: Viele Radfahrer auf einer Landstraße in grüner süddeutscher Landschaft"
+            class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-charcoal-blue-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-charcoal-blue">Was dich erwartet</h2>
+        <p class="text-charcoal-blue-400 mt-4">Ein Tag voller Energie, Gemeinschaft und Fahrspaß.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+          <mat-icon class="text-baltic-blue text-4xl mb-4">group</mat-icon>
+          <h3 class="text-xl font-bold mb-2">Gemeinsamer Start</h3>
+          <p class="text-charcoal-blue-400">Wir starten alle zusammen und rollen als große Gruppe durch die Stadt.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+          <mat-icon class="text-honey-bronze text-4xl mb-4">map</mat-icon>
+          <h3 class="text-xl font-bold mb-2">Feste Strecke</h3>
+          <p class="text-charcoal-blue-400">Eine sorgfältig geplante Route, die für alle Fitnesslevel geeignet ist.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+          <mat-icon class="text-blaze-orange text-4xl mb-4">celebration</mat-icon>
+          <h3 class="text-xl font-bold mb-2">Rahmenprogramm</h3>
+          <p class="text-charcoal-blue-400">Musik, Verpflegung und gute Laune an verschiedenen Stationen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partners Section -->
+  <section class="py-12 bg-white border-t border-charcoal-blue-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-charcoal-blue-300 text-sm font-semibold uppercase tracking-wider mb-8">In Kooperation
+        mit</p>
+      <div
+        class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+        <div class="flex items-center gap-2">
+          <mat-icon class="text-charcoal-blue">location_city</mat-icon>
+          <span class="font-bold text-xl">Stadt Freiburg</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <mat-icon class="text-charcoal-blue">directions_bike</mat-icon>
+          <span class="font-bold text-xl">ADFC Freiburg</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <mat-icon class="text-charcoal-blue">groups</mat-icon>
+          <span class="font-bold text-xl">Stadtradeln</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
