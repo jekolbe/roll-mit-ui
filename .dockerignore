@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Build output (rebuilt in image)
+dist
+tmp
+out-tsc
+.angular
+.cache
+
+# Git and IDE
+.git
+.gitignore
+.idea
+.vscode
+*.swp
+*.swo
+.history
+
+# Tests and coverage
+coverage
+*.spec.ts
+__screenshots__
+karma.conf.js
+vitest.config.*
+
+# Docs and dev files
+*.md
+!README.md
+.env*
+!.env.example
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*
+.docker
+
+# OS and misc
+.DS_Store
+Thumbs.db
