@@ -20,6 +20,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/ueber/ueber.component').then(m => m.UeberComponent),
   },
   {
+    path: 'strecke',
+    loadComponent: () => import('./pages/strecke/strecke.component').then(m => m.StreckeComponent),
+  },
+  {
     path: 'helfen',
     loadComponent: () => import('./pages/mithelfen/mithelfen.component').then(m => m.MithelfenComponent),
   },
