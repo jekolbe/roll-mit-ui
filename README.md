@@ -20,9 +20,11 @@ On startup
 `sudo service apache2 stop`
 `caddy start --config Caddyfile`
 
-Routine
-`docker container stop <name>`
-`docker container rm <name>`
+## Routine
+`cd /home/roll-mit-ui`
+`git pull`
+`docker container stop roll-mit-ui`
+`docker container rm roll-mit-ui`
 `docker image rm roll-mit-ui:latest`
 `cd /home/roll-mit-ui`
 `git pull`
