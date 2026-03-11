@@ -29,8 +29,18 @@ else
   echo "No container named ${CONTAINER_NAME} to remove."
 fi
 
-echo "=== Removing existing image (if exists) ==="
-if docker images -q "${IMAGE_NAME}:latest" >/dev/null; then
+echo "=== Removing existing image (and any containers using it) ==="
+IMAGE_ID="$(docker images -q "${IMAGE_NAME}:latest" || true)"
+
+if [[ -n "${IMAGE_ID}" ]]; then
+  # Remove all containers (running or exited) that use this image
+  CONTAINERS_USING_IMAGE="$(docker ps -a --filter "ancestor=${IMAGE_NAME}:latest" -q || true)"
+  if [[ -n "${CONTAINERS_USING_IMAGE}" ]]; then
+    echo "Removing containers using image ${IMAGE_NAME}:latest"
+    docker rm -f ${CONTAINERS_USING_IMAGE}
+  fi
+
+  echo "Removing image ${IMAGE_NAME}:latest"
   docker image rm "${IMAGE_NAME}:latest"
 else
   echo "No image ${IMAGE_NAME}:latest to remove."
