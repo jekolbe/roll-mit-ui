@@ -8,23 +8,81 @@
         </a>
       </div>
 
-      <nav class="hidden md:flex space-x-8">
-        <a routerLink="/" routerLinkActive="text-honey-bronze" [routerLinkActiveOptions]="{exact: true}"
-          class="hover:text-sky-reflection transition-colors font-medium">Start</a>
-        <a routerLink="/ueber" routerLinkActive="text-honey-bronze"
-          class="hover:text-sky-reflection transition-colors font-medium">Über Roll Mit</a>
-        <a routerLink="/strecke" routerLinkActive="text-honey-bronze"
-          class="hover:text-sky-reflection transition-colors font-medium">Strecke</a>
-        <a routerLink="/helfen" routerLinkActive="text-honey-bronze"
-          class="hover:text-sky-reflection transition-colors font-medium">Mithelfen</a>
+      <nav class="hidden md:flex space-x-8" aria-label="Primary">
+        <ng-container *ngFor="let item of menuItems; trackBy: trackByPath">
+          <a
+            [routerLink]="item.path"
+            routerLinkActive="text-honey-bronze"
+            [routerLinkActiveOptions]="{exact: item.exact}"
+            class="hover:text-sky-reflection transition-colors font-medium"
+          >
+            {{ item.label }}
+          </a>
+        </ng-container>
       </nav>
 
       <div class="flex items-center md:hidden">
-        <!-- Mobile menu button could go here if needed, but keeping it simple for now -->
-        <button mat-icon-button class="text-white">
+        <button
+          mat-icon-button
+          class="text-white"
+          (click)="openMobileMenu()"
+          aria-label="Open menu"
+          aria-haspopup="dialog"
+          [attr.aria-expanded]="mobileMenuOpen"
+        >
           <mat-icon>menu</mat-icon>
         </button>
       </div>
     </div>
+  </div>
+
+  <!-- Mobile fullscreen overlay menu (slides in from the right) -->
+  <div
+    class="fixed inset-0 z-50 md:hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile menu"
+    [attr.aria-hidden]="!mobileMenuOpen"
+    [class.pointer-events-none]="!mobileMenuOpen"
+  >
+    <!-- Backdrop -->
+    <div
+      class="absolute inset-0 bg-black/60 transition-opacity duration-300"
+      [class.opacity-0]="!mobileMenuOpen"
+      [class.opacity-100]="mobileMenuOpen"
+      (click)="closeMobileMenu()"
+    ></div>
+
+    <!-- Panel -->
+    <aside
+      class="absolute right-0 top-0 h-full w-full bg-charcoal-blue text-white shadow-xl transform transition-transform duration-300 ease-out overflow-y-auto"
+      [class.translate-x-full]="!mobileMenuOpen"
+      [class.translate-x-0]="mobileMenuOpen"
+    >
+      <div class="flex items-center justify-between px-4 py-4 border-b border-white/10">
+        <span class="text-lg font-bold">Menü</span>
+        <button
+          mat-icon-button
+          (click)="closeMobileMenu()"
+          aria-label="Close menu"
+          class="text-white"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+      <nav class="p-4 flex flex-col gap-1" aria-label="Mobile navigation">
+        <a
+          *ngFor="let item of menuItems; trackBy: trackByPath"
+          [routerLink]="item.path"
+          routerLinkActive="text-honey-bronze"
+          [routerLinkActiveOptions]="{exact: item.exact}"
+          (click)="closeMobileMenu()"
+          class="px-3 py-3 rounded-md hover:text-sky-reflection transition-colors font-medium"
+        >
+          {{ item.label }}
+        </a>
+      </nav>
+    </aside>
   </div>
 </header>
