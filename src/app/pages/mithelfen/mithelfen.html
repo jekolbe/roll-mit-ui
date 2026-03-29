@@ -1,43 +1,203 @@
-<main class="py-20 bg-charcoal-blue-100 min-h-[60vh]">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <mat-icon class="text-6xl h-16 w-16 text-blaze-orange mb-6">volunteer_activism</mat-icon>
-    <h1 class="text-4xl font-extrabold text-charcoal-blue mb-6">Werde Teil des Teams!</h1>
+<main
+  class="py-16 sm:py-24 bg-gradient-to-b from-charcoal-blue-100 via-white to-charcoal-blue-100/40 min-h-[70vh]"
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="text-center mb-14 sm:mb-16">
+      <mat-icon
+        class="text-6xl !w-16 !h-16 text-blaze-orange mb-5"
+        aria-hidden="true"
+        >volunteer_activism</mat-icon
+      >
+      <h1
+        class="text-4xl sm:text-5xl font-extrabold text-charcoal-blue mb-5 tracking-tight"
+      >
+        Werde Teil des Teams!
+      </h1>
+      <p
+        class="text-lg sm:text-xl text-charcoal-blue-400 max-w-2xl mx-auto leading-relaxed"
+      >
+        Ein Event wie Roll Mit lebt vom Engagement vieler helfender Hände. Unten
+        findest du verschiedene Einsatzbereiche – klicke dich ein, um zu lesen,
+        was dich erwartet, was du mitbringen solltest und was wir dir stellen.
+      </p>
+    </header>
 
-    <p class="text-xl text-charcoal-blue-400 mb-10 max-w-2xl mx-auto">
-      Ein Event wie Roll Mit lebt vom Engagement vieler helfender Hände.
-      Ob als Ordner, bei der Verpflegung oder im Aufbauteam – wir freuen uns auf dich!
-    </p>
+    <section class="mb-16 sm:mb-20" aria-labelledby="helfen-rollen-heading">
+      <h2 id="helfen-rollen-heading" class="sr-only">Helfer-Bereiche</h2>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        @for (r of rollen; track r.slug) {
+        <a
+          [routerLink]="['/helfen', r.slug]"
+          class="group relative flex flex-col rounded-2xl border-2 bg-white p-6 sm:p-7 shadow-md transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blaze-orange"
+          [ngClass]="r.accentBorder"
+        >
+          <div
+            class="mb-4 flex h-14 w-14 items-center justify-center rounded-xl transition-transform group-hover:scale-105"
+            [ngClass]="r.accentBg"
+          >
+            <mat-icon
+              [ngClass]="r.accentIcon + ' !text-3xl !w-8 !h-8'"
+              aria-hidden="true"
+              >{{ r.icon }}</mat-icon
+            >
+          </div>
+          <h3
+            class="text-xl font-bold text-charcoal-blue mb-2 group-hover:text-baltic-blue transition-colors"
+          >
+            {{ r.title }}
+          </h3>
+          <p class="text-sm text-charcoal-blue-400 leading-snug flex-grow mb-4">
+            {{ r.teaser }}
+          </p>
+          <span
+            class="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-blaze-orange group-hover:gap-2 transition-all"
+          >
+            Mehr erfahren
+            <mat-icon class="!text-lg !w-5 !h-5" aria-hidden="true"
+              >chevron_right</mat-icon
+            >
+          </span>
+        </a>
+        }
+      </div>
+    </section>
 
-    <div class="bg-white p-10 rounded-3xl shadow-xl inline-block text-left max-w-lg w-full">
-      <h2 class="text-2xl font-bold mb-4 text-charcoal-blue">Helfer gesucht</h2>
-      <ul class="space-y-4 mb-8">
-        <li class="flex items-start gap-3">
-          <mat-icon class="text-baltic-blue mt-1">check_circle</mat-icon>
-          <span>Streckenposten & Ordner</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <mat-icon class="text-baltic-blue mt-1">check_circle</mat-icon>
-          <span>Verpflegungsstationen</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <mat-icon class="text-baltic-blue mt-1">check_circle</mat-icon>
-          <span>Auf- und Abbau</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <mat-icon class="text-baltic-blue mt-1">check_circle</mat-icon>
-          <span>und vieles mehr...</span>
-        </li>
-      </ul>
-
-      <a href="https://rollmit.aidaform.com/helfer" target="_blank" class="block">
-        <button mat-flat-button color="primary" class="!bg-blaze-orange !text-white !w-full !py-6 !text-lg !rounded-xl">
-          Jetzt zum Formular
-          <mat-icon class="ml-2">open_in_new</mat-icon>
+    <section
+      class="mx-auto max-w-lg rounded-3xl border border-charcoal-blue-200 bg-white p-8 sm:p-10 shadow-xl text-center"
+      aria-labelledby="helfen-form-heading"
+    >
+      <mat-icon
+        class="text-baltic-blue !text-4xl !w-10 !h-10 mb-4"
+        aria-hidden="true"
+        >assignment</mat-icon
+      >
+      <h2
+        id="helfen-form-heading"
+        class="text-2xl font-bold text-charcoal-blue mb-3"
+      >
+        Zur Anmeldung
+      </h2>
+      <p class="text-charcoal-blue-400 text-sm mb-6 leading-relaxed">
+        Wenn du weißt, wie du helfen möchtest: Trag dich im Formular ein. Es
+        wird in Deutschland über die
+        <span class="whitespace-nowrap">Vereinscloud</span> des ADFC
+        Baden-Württemberg betrieben.
+      </p>
+      <a
+        [href]="formUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block"
+      >
+        <button
+          mat-flat-button
+          color="primary"
+          class="!bg-blaze-orange !text-white !w-full !py-6 !text-lg !rounded-xl"
+        >
+          Zum Helfer-Formular
+          <mat-icon class="ml-2" aria-hidden="true">open_in_new</mat-icon>
         </button>
       </a>
-      <p class="text-xs text-charcoal-blue-300 mt-4 text-center">
-        Du wirst zu Aidaform weitergeleitet.
-      </p>
-    </div>
+    </section>
+
+    <section class="mx-auto mt-16 sm:mt-20 max-w-2xl" aria-labelledby="faq">
+      <h2
+        id="faq"
+        class="scroll-mt-24 text-2xl sm:text-3xl font-bold text-charcoal-blue text-center mb-6"
+      >
+        Häufige Fragen
+      </h2>
+      <mat-accordion class="flex flex-col gap-3">
+        <mat-expansion-panel
+          class="!rounded-2xl !shadow-md border border-charcoal-blue-200/80"
+        >
+          <mat-expansion-panel-header class="!px-5 !py-1">
+            <mat-panel-title class="font-semibold text-charcoal-blue">
+              Wann und wie bekomme ich Informationen als Helfer?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div
+            class="px-5 pb-5 text-charcoal-blue-400 text-sm sm:text-base leading-relaxed"
+          >
+            <p>
+              Wir werden dir als Helfer vorab regelmäßig Informationen per
+              E-Mail zukommen lassen. Du erhältst diese Mails von
+              <a
+                href="mailto:roll-mit@adfc-bw.de"
+                class="text-baltic-blue font-medium underline decoration-baltic-blue/40 underline-offset-2 hover:decoration-baltic-blue"
+                >roll-mit&#64;adfc-bw.de</a
+              >.<br />
+              Außerdem werden wir ca. eine Woche vor dem Event einen
+              Informationsabend veranstalten, in dem wir noch genauer erklären,
+              was dich als Helfer erwartet. Du musst nicht an diesem
+              Informationsabend teilnehmen. Die Informationen werden wir auch in
+              den E-Mails an dich weitergeben.
+            </p>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          class="!rounded-2xl !shadow-md border border-charcoal-blue-200/80"
+        >
+          <mat-expansion-panel-header class="!px-5 !py-1">
+            <mat-panel-title class="font-semibold text-charcoal-blue">
+              Wo treffen wir uns?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div
+            class="px-5 pb-5 text-charcoal-blue-400 text-sm sm:text-base leading-relaxed"
+          >
+            <p>
+              Alle Helfer treffen sich voraussichtlich zu Beginn ihres Einsatzes
+              (entweder <strong>8 Uhr</strong> oder <strong>12:30 Uhr</strong>)
+              am Mundenhof. Es kann sein, dass es bei einzelnen Helfern Sinn
+              ergibt, direkt zu einem bestimmten Einsatzort zu fahren. Das
+              werden wir vorher mit euch absprechen.
+            </p>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          class="!rounded-2xl !shadow-md border border-charcoal-blue-200/80 mt-3"
+        >
+          <mat-expansion-panel-header class="!px-5 !py-1">
+            <mat-panel-title class="font-semibold text-charcoal-blue">
+              Wer ist mein Ansprechpartner?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div
+            class="px-5 pb-5 text-charcoal-blue-400 text-sm sm:text-base leading-relaxed"
+          >
+            <p>
+              Deine Ansprechpartner sind <strong> Svenja</strong> und
+              <strong> Jenö</strong>. Beide werden sich noch einmal genauer bei
+              dir vorstellen.
+            </p>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          class="!rounded-2xl !shadow-md border border-charcoal-blue-200/80 mt-3"
+        >
+          <mat-expansion-panel-header class="!px-5 !py-1">
+            <mat-panel-title class="font-semibold text-charcoal-blue">
+              Was muss ich tun, wenn ich doch keine Zeit habe?
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div
+            class="px-5 pb-5 text-charcoal-blue-400 text-sm sm:text-base leading-relaxed"
+          >
+            <p>
+              Wir verstehen, dass es manchmal doch anders kommt, als du es
+              geplant hast. Bitte sende uns so früh wie möglich eine E-Mail an
+              <a
+                href="mailto:roll-mit@adfc-bw.de"
+                class="text-baltic-blue font-medium underline decoration-baltic-blue/40 underline-offset-2 hover:decoration-baltic-blue"
+                >roll-mit&#64;adfc-bw.de</a
+              >, damit wir für Ersatz sorgen können.
+            </p>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </section>
   </div>
 </main>

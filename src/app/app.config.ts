@@ -1,14 +1,20 @@
 import {
   ApplicationConfig,
   provideBrowserGlobalErrorListeners,
-} from '@angular/core';
-import {withInMemoryScrolling, provideRouter} from '@angular/router';
+} from "@angular/core";
+import { withInMemoryScrolling, provideRouter } from "@angular/router";
 
-import {routes} from './app.routes';
+import { routes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes, withInMemoryScrolling({scrollPositionRestoration: 'top'})),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: "top",
+        anchorScrolling: "enabled",
+      }),
+    ),
   ],
 };

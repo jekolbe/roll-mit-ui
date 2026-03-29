@@ -25,7 +25,20 @@ export const routes: Routes = [
   },
   {
     path: 'helfen',
-    loadComponent: () => import('./pages/mithelfen/mithelfen.component').then(m => m.MithelfenComponent),
+    loadComponent: () =>
+      import('./pages/mithelfen/mithelfen-layout.component').then((m) => m.MithelfenLayoutComponent),
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./pages/mithelfen/mithelfen.component').then((m) => m.MithelfenComponent),
+      },
+      {
+        path: ':rolleSlug',
+        loadComponent: () =>
+          import('./pages/mithelfen/mithelfen-rolle.component').then((m) => m.MithelfenRolleComponent),
+      },
+    ],
   },
   {
     path: '**',
