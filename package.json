@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "deploy": "node scripts/deploy-remote.mjs",
     "serve:ssr:app": "node dist/app/server/server.mjs"
   },
   "private": true,
