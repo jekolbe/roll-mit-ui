@@ -2,24 +2,50 @@
   <!-- Hero Section -->
   <section class="relative bg-charcoal-blue text-white py-24 overflow-hidden">
     <div class="absolute inset-0 opacity-20">
-      <img src="/hero-cyclists.webp" alt="People on bicycles smiling and having fun cycling together"
-        class="w-full h-full object-cover object-[10%_30%]" />
+      <img
+        src="/hero-cyclists.webp"
+        alt="People on bicycles smiling and having fun cycling together"
+        class="w-full h-full object-cover object-[10%_30%]"
+      />
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
         Roll Mit <span class="text-honey-bronze">2026</span>
       </h1>
-      <p class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10">
-        Das große Fahrrad-Event in Freiburg. Gemeinsam rollen wir durch das
-        wunderbare Freibuger Umland.
+      <div
+        class="inline-flex items-center gap-3 rounded-full border-2 border-honey-bronze/80 bg-honey-bronze/15 px-6 py-3 mb-8 shadow-lg shadow-black/20 backdrop-blur-sm"
+      >
+        <mat-icon
+          class="text-honey-bronze !w-8 !h-8 !text-[2rem]"
+          aria-hidden="true"
+          >event</mat-icon
+        >
+        <span
+          class="text-2xl md:text-3xl font-extrabold tracking-tight text-honey-bronze"
+        >
+          14. Juni 2026
+        </span>
+      </div>
+      <p
+        class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10"
+      >
+        Die Auftaktveranstaltung zum Stadtradeln 2026. Gemeinsam rollen wir
+        durch das wunderbare Freibuger Umland.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button mat-flat-button color="primary"
-          class="!bg-honey-bronze !text-charcoal-blue !px-8 !py-6 !text-lg !rounded-full" routerLink="/ueber">
+        <button
+          mat-flat-button
+          color="primary"
+          class="!bg-honey-bronze !text-charcoal-blue !px-8 !py-6 !text-lg !rounded-full"
+          routerLink="/ueber"
+        >
           Mehr erfahren
         </button>
-        <button mat-stroked-button
-          class="!border-white !text-white !px-8 !py-6 !text-lg !rounded-full hover:!bg-white/10" routerLink="/helfen">
+        <button
+          mat-stroked-button
+          class="!border-white !text-white !px-8 !py-6 !text-lg !rounded-full hover:!bg-white/10"
+          routerLink="/helfen"
+        >
           Mithelfen
         </button>
       </div>
@@ -42,6 +68,11 @@
                 <p class="text-charcoal-blue-400">
                   Markiere dir den Termin im Kalender!
                 </p>
+                <p class="mt-2 font-semibold text-charcoal-blue">10 – 17 Uhr</p>
+                <p class="text-charcoal-blue-400 text-sm mt-1">
+                  Du kannst die Strecke zu einem beliebigen Zeitpunkt befahren.
+                  Offizieller Start ist <strong>10:30 Uhr</strong>.
+                </p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -50,8 +81,15 @@
               </div>
               <div>
                 <h3 class="font-bold text-lg">Freiburg im Breisgau</h3>
-                <span class="text-charcoal-blue-400">Start- und Zielpunkt am
-                  <a class="underline" href="https://www.mundenhof.de/" target="_blank">Mundenhof</a></span>
+                <span class="text-charcoal-blue-400"
+                  >Start- und Zielpunkt am
+                  <a
+                    class="underline"
+                    href="https://www.mundenhof.de/"
+                    target="_blank"
+                    >Mundenhof</a
+                  ></span
+                >
               </div>
             </div>
             <div class="flex gap-4">
@@ -68,9 +106,11 @@
           </div>
         </div>
         <div class="rounded-3xl overflow-hidden shadow-2xl rotate-2">
-          <img src="/info-cyclists-drone.webp"
+          <img
+            src="/info-cyclists-drone.webp"
             alt="Drohnenaufnahme in geringer Höhe: verschiedene Radfahrende auf einer Landstraße in süddeutscher Sommerlandschaft"
-            class="w-full h-full object-cover" />
+            class="w-full h-full object-cover"
+          />
         </div>
       </div>
     </div>
@@ -88,29 +128,42 @@
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow"
+        >
           <mat-icon class="text-baltic-blue text-4xl mb-4">group</mat-icon>
           <h3 class="text-xl font-bold mb-2">Gemeinsamer Start</h3>
           <p class="text-charcoal-blue-400">
-            Wir starten alle zusammen und rollen gemeinsam durch die wunderbare
-            Landschaft.
+            Der offizielle Start ist 10:30 Uhr. Die Strecke ist zwischen 10 und
+            17 Uhr geöffnet und ausgeschildert. Du kannst also auch zu einem
+            anderen Zeitpunkt starten.
           </p>
         </div>
-        <div class="relative bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-          <span
-            class="absolute right-6 top-6 inline-flex items-center rounded-full bg-honey-bronze text-charcoal-blue px-3 py-1 text-xs font-semibold shadow-sm">
-            Folgt in Kürze
-          </span>
+        <div
+          class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col"
+        >
           <mat-icon class="text-honey-bronze text-4xl mb-4">map</mat-icon>
           <h3 class="text-xl font-bold mb-2">Feste Strecke</h3>
-          <p class="text-charcoal-blue-400">
+          <p class="text-charcoal-blue-400 mb-6">
             Eine sorgfältig geplante Route, die für alle Fitnesslevel geeignet
             ist. Egal ob Familie, Freunde oder Solo-Fahrer: Jeder kann
             teilnehmen und Spaß haben.
           </p>
+          <a
+            mat-flat-button
+            color="primary"
+            routerLink="/strecke"
+            class="!bg-honey-bronze !text-charcoal-blue !rounded-full mt-auto self-start"
+          >
+            Zur Strecke
+          </a>
         </div>
-        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
-          <mat-icon class="text-blaze-orange text-4xl mb-4">celebration</mat-icon>
+        <div
+          class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow"
+        >
+          <mat-icon class="text-blaze-orange text-4xl mb-4"
+            >celebration</mat-icon
+          >
           <h3 class="text-xl font-bold mb-2">Rahmenprogramm</h3>
           <p class="text-charcoal-blue-400">
             Musik, Verpflegung und gute Laune gibt es an verschiedenen Stationen
@@ -122,26 +175,43 @@
   </section>
   <!-- Partners Section -->
   <section class="py-12 bg-white border-t border-charcoal-blue-100">
-    <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32 w-full">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32 w-full"
+    >
       <div class="">
-        <p class="text-center text-charcoal-blue-300 text-sm font-semibold uppercase tracking-wider mb-8">
+        <p
+          class="text-center text-charcoal-blue-300 text-sm font-semibold uppercase tracking-wider mb-8"
+        >
           In Kooperation mit
         </p>
         <div class="flex flex-col items-center justify-center gap-4">
-          <a href="https://freiburg.de/" target="_blank"><img src="/logo-stadt-freiburg.webp"
-              alt="Logo der Stadt Freiburg" class="h-16 w-auto object-contain" /></a>
-          <span class="font-bold text-xl text-charcoal-blue text-center">Stadt Freiburg</span>
+          <a href="https://freiburg.de/" target="_blank"
+            ><img
+              src="/logo-stadt-freiburg.webp"
+              alt="Logo der Stadt Freiburg"
+              class="h-16 w-auto object-contain"
+          /></a>
+          <span class="font-bold text-xl text-charcoal-blue text-center"
+            >Stadt Freiburg</span
+          >
         </div>
       </div>
       <div class="max-w-[400px]">
-        <p class="text-center text-charcoal-blue-300 text-sm font-semibold uppercase tracking-wider mb-8">
+        <p
+          class="text-center text-charcoal-blue-300 text-sm font-semibold uppercase tracking-wider mb-8"
+        >
           Veranstaltet von
         </p>
         <div class="flex flex-col items-center justify-center gap-4">
-          <a href="https://freiburg.adfc.de/" target="_blank"><img src="/adfc-logo.webp" alt="Logo der Stadt Freiburg"
-              class="h-16 w-auto object-contain" /></a>
-          <span class="font-bold text-xl text-charcoal-blue text-center">ADFC Freiburg, Breisgau-Hochschwarzwald,
-            Emmendingen</span>
+          <a href="https://freiburg.adfc.de/" target="_blank"
+            ><img
+              src="/adfc-logo.webp"
+              alt="Logo der Stadt Freiburg"
+              class="h-16 w-auto object-contain"
+          /></a>
+          <span class="font-bold text-xl text-charcoal-blue text-center"
+            >ADFC Freiburg, Breisgau-Hochschwarzwald, Emmendingen</span
+          >
         </div>
       </div>
     </div>
