@@ -29,6 +29,7 @@ export class HeaderComponent {
     { label: "Start", path: "/", exact: true },
     { label: "Über Roll Mit", path: "/ueber", exact: false },
     { label: "Strecke", path: "/strecke", exact: false },
+    { label: "Anmeldung", path: "/anmelden", exact: false },
     { label: "Mithelfen", path: "/helfen", exact: false },
   ];
 

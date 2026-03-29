@@ -1,0 +1,153 @@
+<main
+  class="py-16 md:py-20 bg-gradient-to-b from-charcoal-blue-100/80 to-white min-h-[70vh]"
+>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-3 mb-4">
+      <div
+        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-honey-bronze/20 text-honey-bronze shadow-inner"
+      >
+        <mat-icon class="!w-7 !h-7 !text-[1.75rem]" aria-hidden="true"
+          >how_to_reg</mat-icon
+        >
+      </div>
+      <p
+        class="text-sm font-semibold uppercase tracking-wider text-baltic-blue"
+      >
+        Anmeldung
+      </p>
+    </div>
+
+    <h1 class="text-3xl md:text-4xl font-bold text-charcoal-blue mb-6">
+      Meld dich an und hol dir dein Goodie ab!
+    </h1>
+
+    <div class="space-y-5 text-charcoal-blue-500 text-lg leading-relaxed mb-12">
+      <p>
+        <strong class="text-charcoal-blue">Angemeldete Teilnehmer:innen</strong>
+        können sich kleine
+        <span class="text-orange-500 font-semibold">Geschenke</span>
+        abholen.
+      </p>
+      <p>
+        Die Anmeldung wird am
+        <strong class="text-charcoal-blue">13. April 2026 um 10:00 Uhr</strong>
+        freigeschaltet.
+      </p>
+    </div>
+
+    <section
+      class="rounded-3xl border border-charcoal-blue-200 bg-white p-6 md:p-8 shadow-lg shadow-charcoal-blue/10"
+      aria-labelledby="countdown-heading"
+    >
+      <h2
+        id="countdown-heading"
+        class="text-center text-xl md:text-2xl font-bold text-charcoal-blue mb-2"
+      >
+        Noch bis zur Anmeldung
+      </h2>
+      <p class="text-center text-charcoal-blue-400 text-sm mb-8">
+        Montag, 13. April 2026 &middot; 10:00 Uhr (Ortszeit)
+      </p>
+
+      @if (expired()) {
+      <div
+        class="text-center rounded-2xl bg-honey-bronze/15 border border-honey-bronze/40 py-10 px-4"
+      >
+        <mat-icon
+          class="text-honey-bronze !w-12 !h-12 !text-[3rem] mb-3"
+          aria-hidden="true"
+          >celebration</mat-icon
+        >
+        <p class="text-lg font-semibold text-charcoal-blue">
+          Die Anmeldung ist geöffnet!
+        </p>
+        <p class="text-charcoal-blue-400 mt-2 max-w-md mx-auto">
+          Den Link zum Anmeldeformular findest du gleich hier auf dieser Seite.
+        </p>
+      </div>
+      } @else if (countdown(); as c) {
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4"
+        role="timer"
+        [attr.aria-live]="'polite'"
+        [attr.aria-label]="
+            'Verbleibende Zeit bis zur Anmeldung: ' +
+            c.days +
+            ' Tage, ' +
+            c.hours +
+            ' Stunden, ' +
+            c.minutes +
+            ' Minuten, ' +
+            c.seconds +
+            ' Sekunden'
+          "
+      >
+        <div
+          class="group rounded-2xl bg-gradient-to-br from-charcoal-blue to-charcoal-blue-700 p-4 sm:p-5 text-center text-white shadow-md ring-1 ring-white/10"
+        >
+          <span
+            class="block text-3xl sm:text-4xl md:text-5xl font-extrabold tabular-nums tracking-tight text-white"
+            >{{ c.days }}</span
+          >
+          <span
+            class="mt-2 block text-xs sm:text-sm font-medium uppercase tracking-widest text-sky-reflection/90"
+            >Tage</span
+          >
+        </div>
+        <div
+          class="group rounded-2xl bg-gradient-to-br from-charcoal-blue to-charcoal-blue-700 p-4 sm:p-5 text-center text-white shadow-md ring-1 ring-white/10"
+        >
+          <span
+            class="block text-3xl sm:text-4xl md:text-5xl font-extrabold tabular-nums tracking-tight text-honey-bronze"
+            >{{ pad2(c.hours) }}</span
+          >
+          <span
+            class="mt-2 block text-xs sm:text-sm font-medium uppercase tracking-widest text-sky-reflection/90"
+            >Stunden</span
+          >
+        </div>
+        <div
+          class="group rounded-2xl bg-gradient-to-br from-charcoal-blue to-charcoal-blue-700 p-4 sm:p-5 text-center text-white shadow-md ring-1 ring-white/10"
+        >
+          <span
+            class="block text-3xl sm:text-4xl md:text-5xl font-extrabold tabular-nums tracking-tight text-honey-bronze"
+            >{{ pad2(c.minutes) }}</span
+          >
+          <span
+            class="mt-2 block text-xs sm:text-sm font-medium uppercase tracking-widest text-sky-reflection/90"
+            >Minuten</span
+          >
+        </div>
+        <div
+          class="group rounded-2xl bg-gradient-to-br from-baltic-blue to-charcoal-blue p-4 sm:p-5 text-center text-white shadow-md ring-1 ring-honey-bronze/30"
+        >
+          <span
+            class="block text-3xl sm:text-4xl md:text-5xl font-extrabold tabular-nums tracking-tight text-honey-bronze"
+            >{{ pad2(c.seconds) }}</span
+          >
+          <span
+            class="mt-2 block text-xs sm:text-sm font-medium uppercase tracking-widest text-sky-reflection/90"
+            >Sekunden</span
+          >
+        </div>
+      </div>
+      } @else {
+      <div class="flex justify-center py-12">
+        <div
+          class="h-12 w-12 rounded-full border-4 border-charcoal-blue-200 border-t-honey-bronze animate-spin"
+          role="status"
+          aria-label="Countdown wird geladen"
+        ></div>
+      </div>
+      } @if (!expired()) {
+      <p
+        class="mt-8 text-center text-charcoal-blue-400 text-sm leading-relaxed max-w-xl mx-auto"
+      >
+        Sobald die Anmeldung live ist, veröffentlichen wir hier den direkten
+        <strong class="text-charcoal-blue">Link zum Anmeldeformular</strong>
+        &mdash; einfach diese Seite speichern oder später wieder aufrufen.
+      </p>
+      }
+    </section>
+  </div>
+</main>

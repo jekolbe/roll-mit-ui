@@ -24,6 +24,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/strecke/strecke.component').then(m => m.StreckeComponent),
   },
   {
+    path: 'anmelden',
+    loadComponent: () =>
+      import('./pages/anmelden/anmelden.component').then(m => m.AnmeldenComponent),
+  },
+  {
     path: 'helfen',
     loadComponent: () =>
       import('./pages/mithelfen/mithelfen-layout.component').then((m) => m.MithelfenLayoutComponent),
