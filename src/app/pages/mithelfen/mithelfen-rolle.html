@@ -76,12 +76,10 @@
           Trag dich im Helfer-Formular ein. Das Formular wird in Deutschland über die Vereinscloud des ADFC
           Baden-Württemberg betrieben.
         </p>
-        <a [href]="formUrl" target="_blank" rel="noopener noreferrer" class="inline-block">
-          <button mat-flat-button color="primary" class="!bg-blaze-orange !text-white !px-8 !py-6 !text-base !rounded-xl">
-            Zum Helfer-Formular
-            <mat-icon class="ml-2">open_in_new</mat-icon>
-          </button>
-        </a>
+        <app-external-form-link-button
+          [href]="formUrl"
+          [label]="'Zum Helfer-Formular'"
+        />
       </div>
     </div>
   </main>

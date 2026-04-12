@@ -2,15 +2,15 @@ import {NgClass} from '@angular/common';
 import {Component, inject} from '@angular/core';
 import {toSignal} from '@angular/core/rxjs-interop';
 import {ActivatedRoute, Router, RouterLink} from '@angular/router';
-import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {map, tap} from 'rxjs';
+import {ExternalFormLinkButtonComponent} from '../../components/external-form-link-button/external-form-link-button.component';
 import {HELFER_FORMULAR_URL, HELFER_ROLLEN_BY_SLUG} from './helfen-rollen.data';
 
 @Component({
   selector: 'app-mithelfen-rolle',
   standalone: true,
-  imports: [NgClass, RouterLink, MatButtonModule, MatIconModule],
+  imports: [NgClass, RouterLink, MatIconModule, ExternalFormLinkButtonComponent],
   templateUrl: './mithelfen-rolle.html',
 })
 export class MithelfenRolleComponent {
