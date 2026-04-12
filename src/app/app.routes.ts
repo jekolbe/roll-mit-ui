@@ -16,6 +16,13 @@ export const routes: Routes = [
       import('./pages/datenschutz/datenschutz.component').then(m => m.DatenschutzComponent),
   },
   {
+    path: 'teilnahmebedingungen',
+    loadComponent: () =>
+      import('./pages/teilnahmebedingungen/teilnahmebedingungen.component').then(
+        (m) => m.TeilnahmebedingungenComponent,
+      ),
+  },
+  {
     path: 'ueber',
     loadComponent: () => import('./pages/ueber/ueber.component').then(m => m.UeberComponent),
   },
