@@ -36,6 +36,11 @@ export const routes: Routes = [
       import('./pages/anmelden/anmelden.component').then(m => m.AnmeldenComponent),
   },
   {
+    path: 'anreise',
+    loadComponent: () =>
+      import('./pages/anreise/anreise.component').then(m => m.AnreiseComponent),
+  },
+  {
     path: 'helfen',
     loadComponent: () =>
       import('./pages/mithelfen/mithelfen-layout.component').then((m) => m.MithelfenLayoutComponent),
