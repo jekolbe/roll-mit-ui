@@ -46,6 +46,11 @@ export const routes: Routes = [
       import('./pages/orga-team/orga-team.component').then((m) => m.OrgaTeamComponent),
   },
   {
+    path: 'material',
+    loadComponent: () =>
+      import('./pages/material/material.component').then((m) => m.MaterialComponent),
+  },
+  {
     path: 'helfen',
     loadComponent: () =>
       import('./pages/mithelfen/mithelfen-layout.component').then((m) => m.MithelfenLayoutComponent),
