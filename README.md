@@ -18,6 +18,7 @@ This contains everything you need to run the app locally.
 
 On startup
 `sudo service apache2 stop`
+`cd /home/Caddy`
 `caddy start --config Caddyfile`
 
 ## Routine
