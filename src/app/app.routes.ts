@@ -61,6 +61,11 @@ export const routes: Routes = [
           import('./pages/mithelfen/mithelfen.component').then((m) => m.MithelfenComponent),
       },
       {
+        path: 'info',
+        loadComponent: () =>
+          import('./pages/mithelfen/helfen-info.component').then((m) => m.HelfenInfoComponent),
+      },
+      {
         path: ':rolleSlug',
         loadComponent: () =>
           import('./pages/mithelfen/mithelfen-rolle.component').then((m) => m.MithelfenRolleComponent),

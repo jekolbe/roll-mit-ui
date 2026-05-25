@@ -1,0 +1,325 @@
+<main
+  class="py-16 sm:py-24 bg-gradient-to-b from-charcoal-blue-100 via-white to-charcoal-blue-100/40 min-h-[70vh]"
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="mb-12 sm:mb-16">
+      <div class="mb-6">
+        <a
+          routerLink="/helfen"
+          class="inline-flex items-center rounded-full border border-charcoal-blue-200 bg-white px-4 py-2 text-sm font-semibold text-baltic-blue shadow-sm transition-colors hover:border-baltic-blue hover:text-blaze-orange"
+        >
+          Zurück zu Mithelfen
+        </a>
+      </div>
+      <h1
+        id="helfen-info"
+        class="scroll-mt-24 mt-5 inline-flex items-center gap-2 text-4xl sm:text-5xl font-extrabold text-charcoal-blue tracking-tight"
+      >
+        Infos für Helfer
+        <a
+          routerLink="/helfen/info"
+          fragment="helfen-info"
+          class="text-baltic-blue hover:text-blaze-orange transition-colors"
+          aria-label="Direktlink zu Infos für Helfer"
+        >
+          #
+        </a>
+      </h1>
+      <p
+        class="mt-5 max-w-3xl text-lg sm:text-xl leading-relaxed text-charcoal-blue-400"
+      >
+        Hier findest du die wichtigsten organisatorischen Infos für deinen
+        Einsatztag bei Roll Mit: Zeitplan, Packliste und Hinweise für die
+        einzelnen Einsatzorte.
+      </p>
+      <nav class="mt-8 flex flex-wrap gap-3" aria-label="Sprungmarken">
+        <a
+          routerLink="/helfen/info"
+          fragment="zeitplan"
+          class="rounded-full border border-charcoal-blue-200 bg-white px-4 py-2 text-sm font-semibold text-charcoal-blue hover:border-baltic-blue hover:text-baltic-blue transition-colors"
+        >
+          Zeitplan
+        </a>
+        <a
+          routerLink="/helfen/info"
+          fragment="packliste"
+          class="rounded-full border border-charcoal-blue-200 bg-white px-4 py-2 text-sm font-semibold text-charcoal-blue hover:border-baltic-blue hover:text-baltic-blue transition-colors"
+        >
+          Packliste
+        </a>
+        <a
+          routerLink="/helfen/info"
+          fragment="mundenhof"
+          class="rounded-full border border-charcoal-blue-200 bg-white px-4 py-2 text-sm font-semibold text-charcoal-blue hover:border-baltic-blue hover:text-baltic-blue transition-colors"
+        >
+          Mundenhof
+        </a>
+        <a
+          routerLink="/helfen/info"
+          fragment="streckenposten"
+          class="rounded-full border border-charcoal-blue-200 bg-white px-4 py-2 text-sm font-semibold text-charcoal-blue hover:border-baltic-blue hover:text-baltic-blue transition-colors"
+        >
+          Streckenposten
+        </a>
+      </nav>
+    </header>
+
+    <div class="space-y-10 sm:space-y-12">
+      <section class="rounded-3xl bg-white border border-charcoal-blue-200 p-6 sm:p-8 shadow-sm">
+        <h2
+          id="zeitplan"
+          class="scroll-mt-24 mb-6 inline-flex items-center gap-2 text-2xl sm:text-3xl font-bold text-charcoal-blue"
+        >
+          Zeitplan
+          <a
+            routerLink="/helfen/info"
+            fragment="zeitplan"
+            class="text-baltic-blue hover:text-blaze-orange transition-colors"
+            aria-label="Direktlink zu Zeitplan"
+          >
+            #
+          </a>
+        </h2>
+
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-separate border-spacing-0 text-sm sm:text-base">
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                  class="border-b border-charcoal-blue-200 px-4 py-3 text-left font-semibold text-charcoal-blue"
+                >
+                  Von
+                </th>
+                <th
+                  scope="col"
+                  class="border-b border-charcoal-blue-200 px-4 py-3 text-left font-semibold text-charcoal-blue"
+                >
+                  Bis
+                </th>
+                <th
+                  scope="col"
+                  class="border-b border-charcoal-blue-200 px-4 py-3 text-left font-semibold text-charcoal-blue"
+                >
+                  Programmpunkt
+                </th>
+                <th
+                  scope="col"
+                  class="border-b border-charcoal-blue-200 px-4 py-3 text-left font-semibold text-charcoal-blue"
+                >
+                  Bemerkungen
+                </th>
+              </tr>
+            </thead>
+            <tbody class="align-top">
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">8:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">8:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Hauptorga trifft am Mundenhof ein</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">8:30</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">8:30</td>
+                <td class="px-4 py-3 text-charcoal-blue">Helfer kommen an</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">8:30</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">8:45</td>
+                <td class="px-4 py-3 text-charcoal-blue">Briefing Helfer</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">8:45</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">8:45</td>
+                <td class="px-4 py-3 text-charcoal-blue">Eintreffen des Transporters</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">8:45</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">9:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Ausladen des Transporters</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">9:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">10:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Transporter fährt die Stempelstationen ab</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">9:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">10:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Aufbau am Mundenhof</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">9:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">10:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Aufbau der externen Stände</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">9:30</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">10:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Streckenposten beziehen Posten an 4 Stempelstationen</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">10:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">16:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Strecke ist geöffnet</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">16:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">17:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Abbau am Mundenhof</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">17:15</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">17:15</td>
+                <td class="px-4 py-3 text-charcoal-blue">Transporter fährt zum HdE und lädt aus</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">17:15</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">19:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Zusammenkommen im HdE</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+              <tr class="odd:bg-charcoal-blue-100/40">
+                <td class="px-4 py-3 font-medium text-charcoal-blue tabular-nums whitespace-nowrap">19:00</td>
+                <td class="px-4 py-3 text-charcoal-blue-400 tabular-nums whitespace-nowrap">22:00</td>
+                <td class="px-4 py-3 text-charcoal-blue">Public Viewing im HdE</td>
+                <td class="px-4 py-3 text-charcoal-blue-300">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="rounded-3xl bg-white border border-charcoal-blue-200 p-6 sm:p-8 shadow-sm">
+        <h2
+          id="packliste"
+          class="scroll-mt-24 mb-6 inline-flex items-center gap-2 text-2xl sm:text-3xl font-bold text-charcoal-blue"
+        >
+          Packliste
+          <a
+            routerLink="/helfen/info"
+            fragment="packliste"
+            class="text-baltic-blue hover:text-blaze-orange transition-colors"
+            aria-label="Direktlink zu Packliste"
+          >
+            #
+          </a>
+        </h2>
+
+        <ul class="space-y-3">
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>Sonnenschutz (Sonnencreme, Sonnenbrille, Kopfbedeckung)</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>Regenschutz (falls wechselhaftes Wetter angesagt wird)</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>Powerbank / Akku für dein Handy</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>Smartphone / Mobiltelefon</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>
+                Dein oranges ADFC-T-Shirt (falls du keines hast, können wir dir
+                vor Ort eines zur Verfügung stellen)
+              </span>
+            </label>
+          </li>
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>Etwas zu trinken für dich</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex cursor-pointer items-start gap-3 rounded-2xl border border-charcoal-blue-200 bg-charcoal-blue-100/40 px-4 py-4 text-charcoal-blue">
+              <input type="checkbox" class="mt-1 h-5 w-5 flex-shrink-0 accent-baltic-blue" />
+              <span>Etwas zu essen für dich</span>
+            </label>
+          </li>
+        </ul>
+        <p class="mt-4 text-sm leading-relaxed text-charcoal-blue-300">
+          Nur du kannst zur Erinnerung für dich Elemente abhaken. Andere sehen
+          diese Änderung nicht. Die Liste wird zurückgesetzt, sobald du die
+          Seite verlässt oder neu lädst.
+        </p>
+      </section>
+
+      <section class="rounded-3xl bg-white border border-charcoal-blue-200 p-6 sm:p-8 shadow-sm">
+        <h2
+          id="mundenhof"
+          class="scroll-mt-24 mb-6 inline-flex items-center gap-2 text-2xl sm:text-3xl font-bold text-charcoal-blue"
+        >
+          Für die Helfer am Mundenhof
+          <a
+            routerLink="/helfen/info"
+            fragment="mundenhof"
+            class="text-baltic-blue hover:text-blaze-orange transition-colors"
+            aria-label="Direktlink zu Für die Helfer am Mundenhof"
+          >
+            #
+          </a>
+        </h2>
+
+        <ul class="list-disc pl-6 text-charcoal-blue-400 leading-relaxed">
+          <li>
+            Treffpunkt ist um 8:30 Uhr am Mundenhof auf dem östlichen Parkplatz
+            (für alle "Nachmittags"-Helfer ist Treffpunkt um 13:00 Uhr).
+          </li>
+        </ul>
+      </section>
+
+      <section class="rounded-3xl bg-white border border-charcoal-blue-200 p-6 sm:p-8 shadow-sm">
+        <h2
+          id="streckenposten"
+          class="scroll-mt-24 mb-6 inline-flex items-center gap-2 text-2xl sm:text-3xl font-bold text-charcoal-blue"
+        >
+          Für die Streckenposten
+          <a
+            routerLink="/helfen/info"
+            fragment="streckenposten"
+            class="text-baltic-blue hover:text-blaze-orange transition-colors"
+            aria-label="Direktlink zu Für die Streckenposten"
+          >
+            #
+          </a>
+        </h2>
+
+        <ul class="list-disc pl-6 space-y-3 text-charcoal-blue-400 leading-relaxed">
+          <li>Bitte seid spätestens 9:45 Uhr auf eurem Posten.</li>
+          <li>
+            Wir bringen euch noch mit dem Transporter folgendes vorbei:
+            Stempelkarten, Stempel &amp; Stempelkissen, kleine Stühle, einen
+            kleinen Tisch sowie eine ADFC-Beachflag als Erkennungsmerkmal.
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</main>

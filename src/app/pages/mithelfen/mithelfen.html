@@ -22,6 +22,36 @@
       </p>
     </header>
 
+    <section
+      class="mb-10 sm:mb-12 rounded-3xl border border-baltic-blue/20 bg-baltic-blue/5 p-6 sm:p-8 shadow-sm"
+      aria-labelledby="helfen-info-heading"
+    >
+      <div
+        class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div>
+          <h2
+            id="helfen-info-heading"
+            class="text-2xl font-bold text-charcoal-blue mb-2"
+          >
+            Allgemeine Infos für Helfer
+          </h2>
+          <p class="text-charcoal-blue-400 leading-relaxed max-w-2xl">
+            Zeitplan, Packliste und Treffpunkte für den Einsatztag findest du
+            gesammelt auf der neuen Info-Seite.
+          </p>
+        </div>
+        <a routerLink="/helfen/info" class="sm:flex-shrink-0">
+          <button
+            mat-stroked-button
+            class="!border-baltic-blue !text-baltic-blue !rounded-full !px-6 !py-5"
+          >
+            Zur Info-Seite
+          </button>
+        </a>
+      </div>
+    </section>
+
     <section class="mb-16 sm:mb-20" aria-labelledby="helfen-rollen-heading">
       <h2 id="helfen-rollen-heading" class="sr-only">Helfer-Bereiche</h2>
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
