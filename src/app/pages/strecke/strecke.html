@@ -3,8 +3,8 @@
     <h1 class="text-4xl font-extrabold text-charcoal-blue mb-8">Strecke</h1>
 
     <p class="text-xl text-charcoal-blue-400 mb-10">
-      Die genaue Route wird noch veröffentlicht. Hier sind die grundsätzlichen
-      Rahmenbedingungen:
+      Die offizielle Route steht als GPX-Datei zum Download bereit. Hier die
+      grundsätzlichen Rahmenbedingungen:
     </p>
 
     <ul class="space-y-4 mb-12">
@@ -88,8 +88,8 @@
         </div>
 
         <p class="text-charcoal-blue-500">
-          Den genauen Link zur Route werden wir rechtzeitig hier und auf allen
-          anderen offiziellen Kanälen teilen.
+          Die Route kannst du als GPX-Datei herunterladen und in deine
+          Navigations-App importieren.
         </p>
 
         <div
@@ -105,21 +105,20 @@
               <div>
                 <p class="font-semibold text-charcoal-blue">GPX-Datei</p>
                 <p class="text-sm text-charcoal-blue-400 mt-1">
-                  Den Download der GPX-Datei werden wir in Kürze bereitstellen.
+                  Offizielle Route Roll Mit 2026 (Stand 6. Juni 2026)
                 </p>
               </div>
             </div>
-            <button
-              type="button"
-              disabled
-              class="inline-flex items-center gap-2 rounded-full border border-charcoal-blue-200 bg-white px-5 py-2.5 text-sm font-semibold text-charcoal-blue-300 cursor-not-allowed self-start sm:self-center"
-              aria-disabled="true"
+            <a
+              href="https://nbg1.your-objectstorage.com/adfc-roll-mit/strecke/offizielle-route-roll-mit-04-06-2026.gpx"
+              download="offizielle-route-roll-mit-04-06-2026.gpx"
+              class="inline-flex items-center gap-2 rounded-full border border-honey-bronze bg-honey-bronze px-5 py-2.5 text-sm font-semibold text-charcoal-blue hover:bg-honey-bronze/90 transition-colors self-start sm:self-center"
             >
               <mat-icon class="!text-base !w-4 !h-4" aria-hidden="true"
                 >download</mat-icon
               >
               GPX herunterladen
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -134,10 +133,36 @@
         id="stempelstationen-heading"
         class="text-2xl font-extrabold text-charcoal-blue mb-6"
       >
-        Stempelstationen
+        Stempelstationen & Toiletten
       </h2>
       <div
-        class="overflow-hidden rounded-3xl border border-charcoal-blue-100 bg-white shadow-xl shadow-charcoal-blue-100/70"
+        class=" overflow-hidden rounded-3xl border border-charcoal-blue-100 bg-white shadow-xl shadow-charcoal-blue-100/70"
+      >
+        <div class="relative w-full aspect-[4/3] sm:aspect-video">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=10yB3szq52ny1vuLDjrFPu-5rmA8yMzg&ehbc=2E312F&noprof=1"
+            title="Stempelstationen auf Google Maps"
+            class="absolute inset-0 h-full w-full border-0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="mt-4 text-sm text-charcoal-blue-400 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <span class="inline-flex items-center gap-2">
+          <span class="h-3 w-3 rounded-full bg-blaze-orange shrink-0" aria-hidden="true"></span>
+          Orange = Stempelstation
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <span class="h-3 w-3 rounded-full bg-baltic-blue shrink-0" aria-hidden="true"></span>
+          Blau = Toilette
+        </span>
+      </p>
+
+      <div
+        class="mt-8 overflow-hidden rounded-3xl border border-charcoal-blue-100 bg-white shadow-xl shadow-charcoal-blue-100/70"
       >
         <img
           src="/stempelstationen.webp"
@@ -145,6 +170,8 @@
           class="h-auto w-full object-cover"
         />
       </div>
+
+
     </section>
   </div>
 </main>
