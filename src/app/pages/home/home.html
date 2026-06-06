@@ -1,6 +1,6 @@
 <main>
   <!-- Hero Section -->
-  <section class="relative bg-charcoal-blue text-white py-24 overflow-hidden">
+  <section class="relative bg-charcoal-blue text-white overflow-hidden flex flex-col">
     <div class="absolute inset-0 opacity-20">
       <img
         src="/hero-cyclists.webp"
@@ -8,47 +8,55 @@
         class="w-full h-full object-cover object-[10%_30%]"
       />
     </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-        Roll Mit <span class="text-honey-bronze">2026</span>
-      </h1>
-      <div
-        class="inline-flex items-center gap-3 rounded-full border-2 border-honey-bronze/80 bg-honey-bronze/15 px-6 py-3 mb-8 shadow-lg shadow-black/20 backdrop-blur-sm"
-      >
-        <mat-icon
-          class="text-honey-bronze !w-8 !h-8 !text-[2rem]"
-          aria-hidden="true"
-          >event</mat-icon
+    <div class="relative flex flex-col flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex flex-col items-center text-center py-24">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+          Roll Mit <span class="text-honey-bronze">2026</span>
+        </h1>
+        <div
+          class="inline-flex items-center gap-3 rounded-full border-2 border-honey-bronze/80 bg-honey-bronze/15 px-6 py-3 mb-8 shadow-lg shadow-black/20 backdrop-blur-sm"
         >
-        <span
-          class="text-2xl md:text-3xl font-extrabold tracking-tight text-honey-bronze"
+          <mat-icon
+            class="text-honey-bronze !w-8 !h-8 !text-[2rem]"
+            aria-hidden="true"
+            >event</mat-icon
+          >
+          <span
+            class="text-2xl md:text-3xl font-extrabold tracking-tight text-honey-bronze"
+          >
+            14. Juni 2026
+          </span>
+        </div>
+        <p
+          class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10"
         >
-          14. Juni 2026
-        </span>
+          Die Auftaktveranstaltung zum STADTRADELN 2026. Gemeinsam rollen wir
+          durch Freiburg und Umgebung und sammeln ganz nebenbei fleißig Kilometer.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            mat-flat-button
+            color="primary"
+            class="!bg-honey-bronze !text-charcoal-blue !px-8 !py-6 !text-lg !rounded-full"
+            routerLink="/ueber"
+          >
+            Mehr erfahren
+          </button>
+          <button
+            mat-stroked-button
+            class="!border-white !text-white !px-8 !py-6 !text-lg !rounded-full hover:!bg-white/10"
+            routerLink="/helfen"
+          >
+            Mithelfen
+          </button>
+        </div>
       </div>
-      <p
-        class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10"
-      >
-        Die Auftaktveranstaltung zum STADTRADELN 2026. Gemeinsam rollen wir
-        durch Freiburg und Umgebung und sammeln ganz nebenbei fleißig Kilometer.
+      <p class="w-full pb-8 pt-6 border-t border-white/10 text-sm md:text-base text-sky-reflection/90 leading-relaxed">
+        Die Teilnahme erfolgt auf eigene Gefahr und im Rahmen der StVO. Es werden keine
+        Straßenabschnitte gesperrt. Der Veranstalter weist ausdrücklich daraufhin, dass alle Teilnehmer als gewöhnliche Verkehrsteilnehmer am Straßenverkehr teilnehmen.
+        Es gilt die übliche Sorgfalt im Straßenverkehr.
+        <a routerLink="/teilnahmebedingungen" class="text-honey-bronze underline hover:text-white transition-colors">Teilnahmebedingungen</a>
       </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button
-          mat-flat-button
-          color="primary"
-          class="!bg-honey-bronze !text-charcoal-blue !px-8 !py-6 !text-lg !rounded-full"
-          routerLink="/ueber"
-        >
-          Mehr erfahren
-        </button>
-        <button
-          mat-stroked-button
-          class="!border-white !text-white !px-8 !py-6 !text-lg !rounded-full hover:!bg-white/10"
-          routerLink="/helfen"
-        >
-          Mithelfen
-        </button>
-      </div>
     </div>
   </section>
 
