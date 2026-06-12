@@ -28,10 +28,31 @@
           </span>
         </div>
         <p
-          class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10"
+          class="text-xl md:text-2xl text-sky-reflection max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Die Auftaktveranstaltung zum STADTRADELN 2026. Gemeinsam rollen wir
-          durch Freiburg und Umgebung und sammeln ganz nebenbei fleißig Kilometer.
+          Die Auftaktveranstaltung zum STADTRADELN 2026. Gemeinsam rollen wir mit
+          über
+          <span
+            class="mx-1.5 inline-flex items-center align-middle"
+            ngSkipHydration
+          >
+            <span
+              class="inline-flex items-center gap-1 rounded-full border-2 border-honey-bronze/70 bg-honey-bronze/15 px-2.5 py-0.5 shadow-lg shadow-honey-bronze/20 backdrop-blur-sm transition-transform duration-500"
+              [class.scale-110]="incrementPulse()"
+            >
+              <mat-icon
+                class="!h-[1.1em] !w-[1.1em] !text-[1.1em] leading-none text-honey-bronze"
+                aria-hidden="true"
+                >groups</mat-icon
+              >
+              <span
+                class="min-w-[3ch] text-xl font-extrabold leading-none tabular-nums text-honey-bronze md:text-2xl"
+                >{{ participantCount() }}</span
+              >
+            </span>
+          </span>
+          Menschen durch Freiburg und Umgebung und sammeln ganz nebenbei fleißig
+          Kilometer.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
           <button
@@ -45,9 +66,9 @@
           <button
             mat-stroked-button
             class="!border-white !text-white !px-8 !py-6 !text-lg !rounded-full hover:!bg-white/10"
-            routerLink="/ueber"
+            routerLink="/strecke"
           >
-            Mehr erfahren
+            Zur Strecke
           </button>
         </div>
       </div>
@@ -271,6 +292,19 @@
           />
         </div>
       </div>
+
+      <figure class="mx-auto mt-16 max-w-sm">
+        <img
+          src="/beschilderung-strecke.webp"
+          alt="Beschilderung entlang der Roll-Mit-Strecke"
+          class="w-full rounded-2xl shadow-lg"
+          loading="lazy"
+        />
+        <figcaption class="mt-3 text-sm text-charcoal-blue-400 text-center">
+          Diese Schilder weisen dir entlang der Strecke auch ohne Navigationsgerät den
+          Weg
+        </figcaption>
+      </figure>
     </div>
   </section>
 

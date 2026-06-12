@@ -8,6 +8,7 @@ type MenuItem = {
   label: string;
   path: string;
   exact: boolean;
+  highlight?: boolean;
 };
 
 @Component({
@@ -28,10 +29,9 @@ export class HeaderComponent {
   readonly menuItems: MenuItem[] = [
     { label: "Start", path: "/", exact: true },
     { label: "Über Roll Mit", path: "/ueber", exact: false },
-    { label: "Strecke", path: "/strecke", exact: false },
+    { label: "Strecke", path: "/strecke", exact: false, highlight: true },
     { label: "Anmeldung", path: "/anmelden", exact: false },
     { label: "Anreise", path: "/anreise", exact: false },
-    { label: "Mithelfen", path: "/helfen", exact: false },
   ];
 
   openMobileMenu(): void {
