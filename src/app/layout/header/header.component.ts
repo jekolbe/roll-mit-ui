@@ -29,6 +29,7 @@ export class HeaderComponent {
   readonly menuItems: MenuItem[] = [
     { label: "Start", path: "/", exact: true },
     { label: "Über Roll Mit", path: "/ueber", exact: false },
+    { label: "Bilder", path: "/bilder", exact: false },
     { label: "Strecke", path: "/strecke", exact: false, highlight: true },
     { label: "Anmeldung", path: "/anmelden", exact: false },
     { label: "Anreise", path: "/anreise", exact: false },
