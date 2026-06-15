@@ -51,6 +51,11 @@ export const routes: Routes = [
       import('./pages/material/material.component').then((m) => m.MaterialComponent),
   },
   {
+    path: 'bilder',
+    loadComponent: () =>
+      import('./pages/bilder/bilder.component').then((m) => m.BilderComponent),
+  },
+  {
     path: 'helfen',
     loadComponent: () =>
       import('./pages/mithelfen/mithelfen-layout.component').then((m) => m.MithelfenLayoutComponent),
