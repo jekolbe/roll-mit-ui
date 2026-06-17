@@ -30,3 +30,22 @@
 .mat-icon {
   font-family: 'Material Icons' !important;
 }
+
+.bilder-image {
+  transition:
+    opacity 0.55s ease-out,
+    transform 0.55s ease-out;
+}
+
+.bilder-image--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bilder-image {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

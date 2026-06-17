@@ -10,6 +10,7 @@ import {
   viewChild,
 } from '@angular/core';
 import {catchError, map, of} from 'rxjs';
+import {BilderImageRevealDirective} from './bilder-image.directive';
 import {
   BILDER_MANIFEST_FALLBACK_URL,
   BILDER_MANIFEST_URL,
@@ -34,6 +35,7 @@ function sortEntries(entries: BilderManifestEntry[]): BilderManifestEntry[] {
 @Component({
   selector: 'app-bilder',
   standalone: true,
+  imports: [BilderImageRevealDirective],
   templateUrl: './bilder.html',
 })
 export class BilderComponent {

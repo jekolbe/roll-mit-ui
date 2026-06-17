@@ -36,16 +36,16 @@
               [class.min-h-48]="!hasDimensions(image)"
             >
               <img
+                bilderImageReveal
                 [src]="image.url"
                 [attr.width]="image.width"
                 [attr.height]="image.height"
                 [alt]="imageAlt(image)"
-                class="block h-full w-full object-contain transition-opacity duration-300"
-                [class.opacity-0]="hasDimensions(image) && !isImageLoaded(image.url)"
-                [class.opacity-100]="!hasDimensions(image) || isImageLoaded(image.url)"
+                class="bilder-image block h-full w-full object-contain opacity-0 scale-[1.03]"
+                [class.bilder-image--visible]="isImageLoaded(image.url)"
                 loading="lazy"
                 decoding="async"
-                (load)="markImageLoaded(image.url)"
+                (revealed)="markImageLoaded(image.url)"
               />
             </div>
             <figcaption class="mt-1 px-1 text-[10px] leading-tight text-charcoal-blue-400">
