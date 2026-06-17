@@ -65,6 +65,7 @@ npm run bilder:process # full copy, convert, and upload
 | `--skip-rename` | Skip step 1 (use existing renamed copies) |
 | `--skip-webp` | Skip step 2 (use existing WebP files) |
 | `--skip-upload` | Skip step 3 (rename and/or convert only) |
+| `--manifest-only` | Rebuild and upload `manifest.json` with width/height (no image re-upload) |
 | `--source <dir>` | Override source directory |
 | `--staging <dir>` | Override staging directory |
 | `--clean` | Delete uploaded objects under `bilder/` |

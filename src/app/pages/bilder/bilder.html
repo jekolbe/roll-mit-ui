@@ -1,11 +1,15 @@
 <main class="py-20">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <h1 class="text-4xl font-extrabold text-charcoal-blue mb-8">Bilder</h1>
 
     @if (loading()) {
       <div
-        class="bg-white border border-charcoal-blue-100 rounded-2xl shadow-sm p-6 md:p-10"
+        class="bg-white border border-charcoal-blue-100 rounded-2xl shadow-sm p-6 md:p-10 flex flex-col items-center gap-4"
       >
+        <div
+          class="h-8 w-8 rounded-full border-2 border-charcoal-blue-100 border-t-blaze-orange animate-spin"
+          aria-hidden="true"
+        ></div>
         <p class="text-xl text-charcoal-blue leading-relaxed">Bilder werden geladen …</p>
       </div>
     } @else if (error()) {
@@ -23,30 +27,48 @@
         </p>
       </div>
     } @else {
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 not-prose">
-        @for (image of images(); track image.url) {
-          <figure
-            class="overflow-hidden rounded-xl border border-charcoal-blue-100 bg-white shadow-sm"
-          >
-            <img
-              [src]="image.url"
-              [alt]="imageAlt(image)"
-              class="w-full h-64 object-cover"
-              loading="lazy"
-            />
-            <figcaption class="px-4 py-3 text-sm text-charcoal-blue-400 text-center">
-              @if (image.authorOrganization) {
-                <span class="block font-semibold text-charcoal-blue">{{
-                  image.authorOrganization
-                }}</span>
-              }
-              <span [class.font-semibold]="!image.authorOrganization" [class.text-charcoal-blue]="!image.authorOrganization">{{
-                image.authorName
-              }}</span>
+      <div class="columns-1 sm:columns-2 xl:columns-3 gap-4 not-prose">
+        @for (image of visibleImages(); track image.url) {
+          <figure class="break-inside-avoid mb-4">
+            <div
+              class="overflow-hidden rounded-xl border border-charcoal-blue-100 shadow-sm bg-charcoal-blue-100/25"
+              [style.aspect-ratio]="imageAspectRatio(image) ?? null"
+              [class.min-h-48]="!hasDimensions(image)"
+            >
+              <img
+                [src]="image.url"
+                [attr.width]="image.width"
+                [attr.height]="image.height"
+                [alt]="imageAlt(image)"
+                class="block h-full w-full object-contain transition-opacity duration-300"
+                [class.opacity-0]="hasDimensions(image) && !isImageLoaded(image.url)"
+                [class.opacity-100]="!hasDimensions(image) || isImageLoaded(image.url)"
+                loading="lazy"
+                decoding="async"
+                (load)="markImageLoaded(image.url)"
+              />
+            </div>
+            <figcaption class="mt-1 px-1 text-[10px] leading-tight text-charcoal-blue-400">
+              {{ imageCaption(image) }}
             </figcaption>
           </figure>
         }
       </div>
+
+      @if (hasMore()) {
+        <div
+          #loadMoreSentinel
+          class="mt-6 flex min-h-16 items-center justify-center py-4"
+          aria-live="polite"
+        >
+          @if (loadingMore()) {
+            <div
+              class="h-6 w-6 rounded-full border-2 border-charcoal-blue-100 border-t-blaze-orange animate-spin"
+              aria-label="Weitere Bilder werden geladen"
+            ></div>
+          }
+        </div>
+      }
     }
   </div>
 </main>

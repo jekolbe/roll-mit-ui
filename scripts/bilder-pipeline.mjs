@@ -64,6 +64,7 @@ function parseArgs(argv) {
     clean: false,
     deleteAll: false,
     yes: false,
+    manifestOnly: false,
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -101,6 +102,11 @@ function parseArgs(argv) {
         break;
       case "--yes":
         options.yes = true;
+        break;
+      case "--manifest-only":
+        options.manifestOnly = true;
+        options.skipRename = true;
+        options.skipWebp = true;
         break;
       default:
         throw new Error(`Unknown argument: ${arg}`);
@@ -167,8 +173,12 @@ async function main() {
     console.log(`Prepared ${webp.length} WebP image(s).`);
   }
 
-  if (!options.skipUpload) {
-    console.log("\n--- Step 3: Upload to S3 ---");
+  if (!options.skipUpload || options.manifestOnly) {
+    console.log(
+      options.manifestOnly
+        ? "\n--- Refresh manifest (with dimensions) ---"
+        : "\n--- Step 3: Upload to S3 ---",
+    );
     const credentials = await promptCredentials();
     const s3 = createS3Client({
       endpoint: options.endpoint,
@@ -183,8 +193,13 @@ async function main() {
       dryRun: options.dryRun,
       limit: options.limit,
       manifestPath: options.manifestPath,
+      manifestOnly: options.manifestOnly,
     });
-    console.log(`Upload complete. ${manifest.length} image(s) in manifest.`);
+    console.log(
+      options.manifestOnly
+        ? `Manifest updated. ${manifest.length} image(s).`
+        : `Upload complete. ${manifest.length} image(s) in manifest.`,
+    );
   }
 
   console.log("\nDone.");

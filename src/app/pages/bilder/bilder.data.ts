@@ -3,6 +3,8 @@ export interface BilderManifestEntry {
   authorName: string;
   authorOrganization?: string;
   filename: string;
+  width?: number;
+  height?: number;
 }
 
 export const BILDER_MANIFEST_URL =

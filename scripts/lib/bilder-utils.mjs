@@ -48,7 +48,7 @@ function formatSize(bytes) {
 
 /**
  * Convert an image to WebP, targeting <= 1 MB via lower quality, max effort,
- * and progressive downscaling when needed.
+ * and progressive downscaling when needed. Returns output dimensions.
  */
 export async function convertImageToWebp(srcPath, destPath) {
   const meta = await sharp(srcPath).metadata();
@@ -57,6 +57,15 @@ export async function convertImageToWebp(srcPath, destPath) {
     (meta.height ?? 0) > WEBP_MAX_DIMENSION;
   let dimensionLimit = needsResize ? WEBP_MAX_DIMENSION : null;
   const outputName = basename(destPath);
+
+  async function writeAndMeasure(buffer) {
+    writeFileSync(destPath, buffer);
+    const outputMeta = await sharp(buffer).metadata();
+    return {
+      width: outputMeta.width ?? 0,
+      height: outputMeta.height ?? 0,
+    };
+  }
 
   while (true) {
     for (let quality = WEBP_INITIAL_QUALITY; quality >= WEBP_MIN_QUALITY; quality -= 5) {
@@ -74,12 +83,12 @@ export async function convertImageToWebp(srcPath, destPath) {
         .toBuffer();
 
       if (buffer.length <= WEBP_MAX_BYTES) {
-        writeFileSync(destPath, buffer);
         const resizeNote = dimensionLimit ? `, max ${dimensionLimit}px` : "";
+        const dims = await writeAndMeasure(buffer);
         console.log(
-          `Converted: ${outputName} (${formatSize(buffer.length)}, quality ${quality}${resizeNote})`,
+          `Converted: ${outputName} (${formatSize(buffer.length)}, quality ${quality}${resizeNote}, ${dims.width}x${dims.height})`,
         );
-        return;
+        return dims;
       }
     }
 
@@ -99,11 +108,11 @@ export async function convertImageToWebp(srcPath, destPath) {
       const buffer = await pipeline
         .webp({ quality: WEBP_MIN_QUALITY, effort: WEBP_EFFORT })
         .toBuffer();
-      writeFileSync(destPath, buffer);
+      const dims = await writeAndMeasure(buffer);
       console.warn(
         `Warning: ${outputName} is ${formatSize(buffer.length)} after max compression (target < 1 MB)`,
       );
-      return;
+      return dims;
     }
   }
 }
@@ -347,6 +356,12 @@ export function collectWebpFiles(webpDir, limit) {
   return results;
 }
 
+export async function readWebpDimensions(webpPath) {
+  const meta = await sharp(webpPath).metadata();
+  if (!meta.width || !meta.height) return null;
+  return { width: meta.width, height: meta.height };
+}
+
 export async function promptCredentials() {
   const accessKeyId = process.env.S3_ACCESS_KEY_ID?.trim();
   const secretAccessKey = process.env.S3_SECRET_ACCESS_KEY?.trim();
@@ -404,6 +419,7 @@ export async function uploadImages({
   dryRun,
   limit,
   manifestPath,
+  manifestOnly = false,
 }) {
   const files = collectWebpFiles(webpDir, limit);
   const manifest = [];
@@ -412,26 +428,28 @@ export async function uploadImages({
     const key = `${prefix}${file.filename}`;
     const url = buildPublicUrl({ bucket, endpoint, key });
 
-    if (dryRun) {
-      console.log(`[dry-run] upload ${file.webpPath} -> s3://${bucket}/${key}`);
-    } else {
-      const body = readFileSync(file.webpPath);
-      const metadata = { authorName: encodeS3MetadataValue(file.authorName) };
-      if (file.authorOrganization) {
-        metadata.authorOrganization = encodeS3MetadataValue(
-          file.authorOrganization,
+    if (!manifestOnly) {
+      if (dryRun) {
+        console.log(`[dry-run] upload ${file.webpPath} -> s3://${bucket}/${key}`);
+      } else {
+        const body = readFileSync(file.webpPath);
+        const metadata = { authorName: encodeS3MetadataValue(file.authorName) };
+        if (file.authorOrganization) {
+          metadata.authorOrganization = encodeS3MetadataValue(
+            file.authorOrganization,
+          );
+        }
+        await s3.send(
+          new PutObjectCommand({
+            Bucket: bucket,
+            Key: key,
+            Body: body,
+            ContentType: "image/webp",
+            Metadata: metadata,
+          }),
         );
+        console.log(`Uploaded: ${key}`);
       }
-      await s3.send(
-        new PutObjectCommand({
-          Bucket: bucket,
-          Key: key,
-          Body: body,
-          ContentType: "image/webp",
-          Metadata: metadata,
-        }),
-      );
-      console.log(`Uploaded: ${key}`);
     }
 
     const entry = {
@@ -441,6 +459,11 @@ export async function uploadImages({
     };
     if (file.authorOrganization) {
       entry.authorOrganization = file.authorOrganization;
+    }
+    const dims = await readWebpDimensions(file.webpPath);
+    if (dims) {
+      entry.width = dims.width;
+      entry.height = dims.height;
     }
     manifest.push(entry);
   }
