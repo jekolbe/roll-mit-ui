@@ -4,7 +4,7 @@ import {RouterLink} from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
-import {HELFER_FORMULAR_URL, HELFER_ROLLEN} from './helfen-rollen.data';
+import {HELFER_ROLLEN} from './helfen-rollen.data';
 
 @Component({
   selector: 'app-mithelfen',
@@ -14,5 +14,4 @@ import {HELFER_FORMULAR_URL, HELFER_ROLLEN} from './helfen-rollen.data';
 })
 export class MithelfenComponent {
   protected readonly rollen = HELFER_ROLLEN;
-  protected readonly formUrl = HELFER_FORMULAR_URL;
 }
