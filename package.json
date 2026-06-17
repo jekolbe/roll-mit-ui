@@ -10,7 +10,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "deploy": "node scripts/deploy-remote.mjs",
-    "serve:ssr:app": "node dist/app/server/server.mjs"
+    "serve:ssr:app": "node dist/app/server/server.mjs",
+    "convert-to-webp": "node scripts/convert-to-webp.js",
+    "bilder:process": "node scripts/bilder-pipeline.mjs",
+    "bilder:test": "node scripts/bilder-pipeline.mjs --limit 5",
+    "bilder:clean": "node scripts/bilder-pipeline.mjs --clean"
   },
   "private": true,
   "dependencies": {
@@ -36,12 +40,14 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "@aws-sdk/client-s3": "^3.830.0",
     "angular-eslint": "21.1.0",
     "cross-env": "^10.1.0",
     "eslint": "^9.39.1",
     "jsdom": "^27.0.0",
     "postcss": "^8.5.3",
     "prettier": "3.8.1",
+    "sharp": "^0.35.1",
     "tailwindcss": "^4.1.12",
     "typescript": "~5.9.2",
     "typescript-eslint": "8.47.0",

@@ -1,0 +1,607 @@
+[
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Toni 01.webp",
+    "authorName": "Toni",
+    "filename": "Toni 01.webp"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 01.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 01.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 02.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 02.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 03.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 03.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 04.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 04.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 05.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 05.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 06.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 06.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 07.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 07.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 08.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 08.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 09.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 09.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 10.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 10.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 11.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 11.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 12.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 12.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 13.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 13.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 14.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 14.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 15.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 15.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 16.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 16.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 17.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 17.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Andreas Prinz 18.webp",
+    "authorName": "Andreas Prinz",
+    "filename": "ADFC Andreas Prinz 18.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 01.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 01.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 02.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 02.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 03.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 03.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 04.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 04.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 05.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 05.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 06.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 06.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 07.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 07.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Frank Borsch 08.webp",
+    "authorName": "Frank Borsch",
+    "filename": "ADFC Frank Borsch 08.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 01.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 01.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 02.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 02.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 03.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 03.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 04.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 04.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 05.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 05.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 06.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 06.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 07.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 07.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 08.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 08.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 09.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 09.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 10.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 10.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 11.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 11.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 12.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 12.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Jenö Kolbe 13.webp",
+    "authorName": "Jenö Kolbe",
+    "filename": "ADFC Jenö Kolbe 13.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 01.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 01.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 02.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 02.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 03.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 03.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 04.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 04.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 05.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 05.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 06.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 06.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 07.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 07.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 08.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 08.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 09.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 09.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/ADFC Svenja Bettinger 10.webp",
+    "authorName": "Svenja Bettinger",
+    "filename": "ADFC Svenja Bettinger 10.webp",
+    "authorOrganization": "ADFC"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 01.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 01.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 02.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 02.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 03.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 03.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 04.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 04.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 05.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 05.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 06.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 06.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 07.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 07.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 08.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 08.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 09.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 09.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 10.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 10.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 11.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 11.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 12.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 12.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 13.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 13.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 14.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 14.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 15.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 15.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 16.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 16.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 17.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 17.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 18.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 18.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 19.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 19.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 20.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 20.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 21.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 21.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 22.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 22.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 23.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 23.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 24.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 24.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 25.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 25.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 26.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 26.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 27.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 27.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 28.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 28.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 29.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 29.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 30.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 30.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 31.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 31.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 32.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 32.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 33.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 33.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 34.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 34.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 35.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 35.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 36.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 36.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 37.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 37.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 38.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 38.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 39.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 39.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 40.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 40.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 41.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 41.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 42.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 42.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 43.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 43.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 44.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 44.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 45.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 45.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 46.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 46.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 47.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 47.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 48.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 48.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 49.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 49.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 50.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 50.webp",
+    "authorOrganization": "Stadt Freiburg"
+  },
+  {
+    "url": "https://roll-mit-2026.nbg1.your-objectstorage.com/bilder/Stadt Freiburg Michael Spiegelhalter 51.webp",
+    "authorName": "Michael Spiegelhalter",
+    "filename": "Stadt Freiburg Michael Spiegelhalter 51.webp",
+    "authorOrganization": "Stadt Freiburg"
+  }
+]
