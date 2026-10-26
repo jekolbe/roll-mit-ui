@@ -23,6 +23,11 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'ueber/2026',
+    loadComponent: () =>
+      import('./pages/ueber/ueber-2026.component').then((m) => m.Ueber2026Component),
+  },
+  {
     path: 'ueber',
     loadComponent: () => import('./pages/ueber/ueber.component').then(m => m.UeberComponent),
   },
@@ -34,11 +39,6 @@ export const routes: Routes = [
     path: 'anmelden',
     loadComponent: () =>
       import('./pages/anmelden/anmelden.component').then(m => m.AnmeldenComponent),
-  },
-  {
-    path: 'anreise',
-    loadComponent: () =>
-      import('./pages/anreise/anreise.component').then(m => m.AnreiseComponent),
   },
   {
     path: 'orga-team',
@@ -64,11 +64,6 @@ export const routes: Routes = [
         path: '',
         loadComponent: () =>
           import('./pages/mithelfen/mithelfen.component').then((m) => m.MithelfenComponent),
-      },
-      {
-        path: 'info',
-        loadComponent: () =>
-          import('./pages/mithelfen/helfen-info.component').then((m) => m.HelfenInfoComponent),
       },
       {
         path: ':rolleSlug',

@@ -9,21 +9,57 @@
       </div>
 
       <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
-        <ng-container *ngFor="let item of menuItems; trackBy: trackByPath">
-          <a
-            [routerLink]="item.path"
-            [routerLinkActive]="item.highlight ? '' : 'text-honey-bronze'"
-            [routerLinkActiveOptions]="{exact: item.exact}"
-            class="inline-flex items-center h-9 transition-colors"
-            [ngClass]="
-              item.highlight
-                ? 'px-3 rounded-full bg-sky-reflection/20 text-sky-reflection font-semibold hover:bg-sky-reflection/30'
-                : 'font-medium hover:text-sky-reflection'
-            "
-          >
-            {{ item.label }}
-          </a>
-        </ng-container>
+        @for (item of menuItems; track item.path) {
+          @if (item.children?.length) {
+            <div class="relative group">
+              <a
+                [routerLink]="item.path"
+                routerLinkActive="text-honey-bronze"
+                [routerLinkActiveOptions]="{exact: item.exact}"
+                class="inline-flex items-center gap-1 h-9 font-medium hover:text-sky-reflection transition-colors"
+              >
+                {{ item.label }}
+                <mat-icon
+                  class="!text-base !w-4 !h-4 !leading-none !inline-flex !items-center !justify-center"
+                  aria-hidden="true"
+                  >expand_more</mat-icon
+                >
+              </a>
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute left-0 top-full pt-1 transition-opacity"
+                role="menu"
+              >
+                <div class="min-w-[12rem] rounded-xl border border-white/10 bg-charcoal-blue py-2 shadow-xl">
+                  @for (child of item.children; track child.path) {
+                    <a
+                      [routerLink]="child.path"
+                      routerLinkActive="text-honey-bronze"
+                      [routerLinkActiveOptions]="{exact: child.exact}"
+                      class="block px-4 py-2 text-sm font-medium hover:bg-white/10 hover:text-sky-reflection transition-colors"
+                      role="menuitem"
+                    >
+                      {{ child.label }}
+                    </a>
+                  }
+                </div>
+              </div>
+            </div>
+          } @else {
+            <a
+              [routerLink]="item.path"
+              [routerLinkActive]="item.highlight ? '' : 'text-honey-bronze'"
+              [routerLinkActiveOptions]="{exact: item.exact}"
+              class="inline-flex items-center h-9 transition-colors"
+              [ngClass]="
+                item.highlight
+                  ? 'px-3 rounded-full bg-sky-reflection/20 text-sky-reflection font-semibold hover:bg-sky-reflection/30'
+                  : 'font-medium hover:text-sky-reflection'
+              "
+            >
+              {{ item.label }}
+            </a>
+          }
+        }
       </nav>
 
       <div class="flex items-center md:hidden">
@@ -77,21 +113,33 @@
       </div>
 
       <nav class="p-4 flex flex-col gap-1" aria-label="Mobile navigation">
-        <a
-          *ngFor="let item of menuItems; trackBy: trackByPath"
-          [routerLink]="item.path"
-          [routerLinkActive]="item.highlight ? '' : 'text-honey-bronze'"
-          [routerLinkActiveOptions]="{exact: item.exact}"
-          (click)="closeMobileMenu()"
-          class="inline-flex items-center min-h-9 px-3 py-2 rounded-md transition-colors"
-          [ngClass]="
-            item.highlight
-              ? 'bg-sky-reflection/20 text-sky-reflection font-semibold hover:bg-sky-reflection/30'
-              : 'font-medium hover:text-sky-reflection'
-          "
-        >
-          {{ item.label }}
-        </a>
+        @for (item of menuItems; track item.path) {
+          <a
+            [routerLink]="item.path"
+            [routerLinkActive]="item.highlight ? '' : 'text-honey-bronze'"
+            [routerLinkActiveOptions]="{exact: item.exact}"
+            (click)="closeMobileMenu()"
+            class="inline-flex items-center min-h-9 px-3 py-2 rounded-md transition-colors"
+            [ngClass]="
+              item.highlight
+                ? 'bg-sky-reflection/20 text-sky-reflection font-semibold hover:bg-sky-reflection/30'
+                : 'font-medium hover:text-sky-reflection'
+            "
+          >
+            {{ item.label }}
+          </a>
+          @for (child of item.children; track child.path) {
+            <a
+              [routerLink]="child.path"
+              routerLinkActive="text-honey-bronze"
+              [routerLinkActiveOptions]="{exact: child.exact}"
+              (click)="closeMobileMenu()"
+              class="inline-flex items-center min-h-9 pl-6 pr-3 py-2 rounded-md font-medium text-white/90 hover:text-sky-reflection transition-colors"
+            >
+              {{ child.label }}
+            </a>
+          }
+        }
       </nav>
     </aside>
   </div>

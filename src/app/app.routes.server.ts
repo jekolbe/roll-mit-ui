@@ -3,10 +3,6 @@ import {HELFER_ROLLEN} from './pages/mithelfen/helfen-rollen.data';
 
 export const serverRoutes: ServerRoute[] = [
   {
-    path: 'helfen/info',
-    renderMode: RenderMode.Prerender,
-  },
-  {
     path: 'helfen/:rolleSlug',
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {

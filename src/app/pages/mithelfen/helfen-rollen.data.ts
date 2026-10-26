@@ -99,26 +99,6 @@ export const HELFER_ROLLEN: HelferRolleData[] = [
       "Ein Lastenrad – wenn es zeitlich möglich ist, organisieren wir gern eine kurze Testrunde, damit du dich ans Fahren gewöhnen kannst",
     ],
   },
-  {
-    slug: "mobile-pannenhilfe",
-    title: "Mobile Pannenhilfe",
-    teaser: "Bei Bedarf zur Stelle fahren und bei Platten helfen",
-    icon: "build",
-    accentBorder: "border-charcoal-blue-300",
-    accentIcon: "text-charcoal-blue",
-    accentBg: "bg-charcoal-blue-100",
-    einleitung: [
-      "Du kannst dir vorstellen, bei Bedarf zu einer Stelle entlang der Strecke zu fahren und Menschen mit platten Reifen zu helfen. Andere Reparaturen bieten wir bewusst nicht an.",
-    ],
-    duBrauchst: [
-      "Ein eigenes Fahrrad",
-      "Die Fähigkeit, einen platten Reifen zu wechseln",
-    ],
-    duBekommst: [
-      "Ein Pannenhilfe-Set",
-      "Den passenden Schlauch oder passendes Flickzeug",
-    ],
-  },
 ];
 
 export const HELFER_ROLLEN_BY_SLUG: Record<string, HelferRolleData> =

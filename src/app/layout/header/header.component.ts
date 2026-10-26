@@ -9,6 +9,7 @@ type MenuItem = {
   path: string;
   exact: boolean;
   highlight?: boolean;
+  children?: MenuItem[];
 };
 
 @Component({
@@ -28,11 +29,17 @@ export class HeaderComponent {
 
   readonly menuItems: MenuItem[] = [
     { label: "Start", path: "/", exact: true },
-    { label: "Über Roll Mit", path: "/ueber", exact: false },
+    {
+      label: "Über Roll Mit",
+      path: "/ueber",
+      exact: false,
+      children: [
+        { label: "Roll Mit 2026", path: "/ueber/2026", exact: true },
+      ],
+    },
     { label: "Bilder", path: "/bilder", exact: false },
-    { label: "Strecke", path: "/strecke", exact: false, highlight: true },
+    { label: "Strecke", path: "/strecke", exact: false },
     { label: "Anmeldung", path: "/anmelden", exact: false },
-    { label: "Anreise", path: "/anreise", exact: false },
   ];
 
   openMobileMenu(): void {
@@ -52,10 +59,6 @@ export class HeaderComponent {
     } else {
       this.openMobileMenu();
     }
-  }
-
-  trackByPath(_: number, item: MenuItem): string {
-    return item.path;
   }
 
   @HostListener("document:keydown.escape")
