@@ -22,6 +22,22 @@
       </p>
     </header>
 
+    <section
+      class="mx-auto mb-14 sm:mb-16 max-w-lg rounded-3xl border border-charcoal-blue-200 bg-white p-8 sm:p-10 shadow-xl text-center"
+      aria-labelledby="helfen-form-heading"
+    >
+      <h2 id="helfen-form-heading" class="sr-only">Helfer-Anmeldung</h2>
+      <p class="text-lg text-charcoal-blue-500 leading-relaxed mb-6">
+        Dieses Formular ist eine Vorab-Anmeldung als Helferin oder Helfer. Alle weiteren
+        Infos folgen. Du hast zu einem späteren Zeitpunkt die Möglichkeit, wann du Zeit
+        hast und in welchem Bereich du helfen möchtest.
+      </p>
+      <app-external-form-link-button
+        [href]="formularUrl"
+        label="Zur Vorab-Anmeldung"
+      />
+    </section>
+
     <section class="mb-16 sm:mb-20" aria-labelledby="helfen-rollen-heading">
       <h2 id="helfen-rollen-heading" class="sr-only">Helfer-Bereiche</h2>
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -60,17 +76,6 @@
         </a>
         }
       </div>
-    </section>
-
-    <section
-      class="mx-auto max-w-lg rounded-3xl border border-charcoal-blue-200 bg-white p-8 sm:p-10 shadow-xl text-center"
-      aria-labelledby="helfen-form-heading"
-    >
-      <h2 id="helfen-form-heading" class="sr-only">Helfer-Anmeldung</h2>
-      <p class="text-lg text-charcoal-blue-500 leading-relaxed">
-        Roll Mit hat dieses Jahr am 14. Juni 2026 stattgefunden. Wir freuen uns darauf,
-        wenn du uns nächstes Jahr bei Roll Mit unterstützt.
-      </p>
     </section>
 
     <section class="mx-auto mt-16 sm:mt-20 max-w-2xl" aria-labelledby="faq">

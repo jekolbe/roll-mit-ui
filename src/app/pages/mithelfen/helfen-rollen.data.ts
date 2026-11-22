@@ -1,6 +1,6 @@
 /** Helfer-Anmeldung (Vereinscloud ADFC Baden-Württemberg, Deutschland). */
 export const HELFER_FORMULAR_URL =
-  "https://vcloud.adfc-bw.de/index.php/apps/forms/s/PXoPC9nwDN3pDwbZwqn4MeMH";
+  "https://vcloud.adfc-bw.de/index.php/apps/forms/s/4xwjJ4ZcDfre2reWHiqknEYL";
 
 export interface HelferRolleData {
   slug: string;
@@ -21,50 +21,57 @@ export const HELFER_ROLLEN: HelferRolleData[] = [
     slug: "streckenposten",
     title: "Streckenposten",
     teaser:
-      "An Kreuzungen und kritischen Stellen: auf Teilnehmende achten, nie den Verkehr regeln.",
+      "Du unterstützt Teilnehmende entlang der Strecke.",
     icon: "traffic",
     accentBorder: "border-baltic-blue/35",
     accentIcon: "text-baltic-blue",
     accentBg: "bg-baltic-blue/10",
     einleitung: [
-      "Du unterstützt entlang der Strecke, beispielsweise an Straßenquerungen. Du darfst und wirst nicht den fließenden Verkehr leiten, sondern weist Teilnehmende auf Stellen hin, die besonders vorsichtig befahren werden sollen.",
-      "Wir achten darauf, dass Streckenposten immer zu zweit sind.",
+      "Du wirst zu zweit mit einem weiteren Menschen entlang der Strecke eine kleine Station betreuten. Die Teilnehmenden können dort einen Stempel abholen, Wasser nachfüllen oder mit anderen ins Gespräch kommen.",
+      "Du beantwortest Fragen zur Strecke und zum Event. Falls du einmal nicht weiterweist, leitest du die Frage einfach an unsere Hauptkoordination weiter.",
     ],
     duBrauchst: [
-      "Warnweste",
-      "Eventuell einen Stuhl (z. B. Campingstuhl), falls du dich zwischendurch setzen möchtest",
-      "Eigene Verpflegung (Trinken und Essen)",
-      "Sonnenschutz (nicht alle Plätze sind schattig)",
+      "Eigene Verpflegung (Trinken und Essen) für den Tag",
+      "Sonnencreme",
+      "Bequeme Kleidung",
+      "Ein Handy auf dem wir dich kontaktieren können"
     ],
     duBekommst: [
       "Fahrt zum Einsatzort, falls du nicht selbst hinfahren möchtest",
       "Eine genaue Einweisung, wann du wo sein sollst",
-      "Eine genaue Einweisung, was du darfst und was nicht",
+      "Einen Stuhl und einen Tisch",
+      "Einen Sonnenschirm"
     ],
   },
   {
     slug: "start-und-ziel",
     title: "Helfer:in am Start- und Zielpunkt",
     teaser:
-      "Du sorgst dafür, dass der Start- und Zielpunkt gut vorbereitet ist.",
+      "Du sorgst dafür, dass am Start- und Zielpunkt alles reibungslos funktioniert.",
     icon: "event",
     accentBorder: "border-blaze-orange/35",
     accentIcon: "text-blaze-orange",
     accentBg: "bg-blaze-orange/10",
     einleitung: [
-      "Du hilfst uns, Start- und Zielpunkt einzurichten. Dazu gehört zum Beispiel: Biertische aufstellen, Absperrbänder anbringen, Material von A nach B bringen und ähnliche Aufgaben.",
+      "Du hilfst uns, Start- und Zielpunkt einzurichten. Dazu gehört zum Beispiel: Sitzgelegenheiten aufstellen, Absperrbänder befestigen, Material von A nach B bringen und ähnliche Aufgaben.",
+      "Wenn du möchtest, kannst du auch gerne an einem unserer Stände aktiv werden. Beispielsweise können sich die Teilnehmenden kleine Geschenke abholen, wenn sie die ganze Strecke gemeistert haben."
     ],
     duBrauchst: [
       "Arbeitshandschuhe, falls du sie beim Aufbau nutzen möchtest",
       "Bequeme Kleidung und festes Schuhwerk",
+      "Eigenes Trinken",
+      "Snacks für Zwischendurch"
     ],
-    duBekommst: ["Eine Einweisung, wann du wo sein sollst"],
+    duBekommst: [
+      "Ein Mittagessen",
+      "Eine Einweisung, wann du wo sein sollst"
+    ],
   },
   {
     slug: "fahrer",
     title: "Fahrer:in",
     teaser:
-      "Mit dem Auto Material und Dinge entlang der Strecke oder zwischen den Punkten fahren.",
+      "Du bringst Material von A nach B.",
     icon: "directions_car",
     accentBorder: "border-honey-bronze/40",
     accentIcon: "text-honey-bronze",
@@ -83,7 +90,7 @@ export const HELFER_ROLLEN: HelferRolleData[] = [
   {
     slug: "mobile-verpflegung",
     title: "Mobile Verpflegungsstation",
-    teaser: "Mit Lastenrad und guter Laune unterwegs",
+    teaser: "Du sorgst mit einem Lastenrad für gute Laune und Verpflegung auf der Strecke.",
     icon: "pedal_bike",
     accentBorder: "border-sky-reflection/40",
     accentIcon: "text-baltic-blue",

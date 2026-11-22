@@ -40,6 +40,7 @@ export class HeaderComponent {
     { label: "Bilder", path: "/bilder", exact: false },
     { label: "Strecke", path: "/strecke", exact: false },
     { label: "Anmeldung", path: "/anmelden", exact: false },
+    { label: "Mithelfen", path: "/helfen", exact: false, highlight: true },
   ];
 
   openMobileMenu(): void {

@@ -71,10 +71,15 @@
       </div>
 
       <div class="rounded-2xl border border-charcoal-blue-200 bg-white p-8 shadow-md text-center">
-        <p class="text-lg text-charcoal-blue-500 leading-relaxed max-w-xl mx-auto">
-          Roll Mit hat dieses Jahr am 14. Juni 2026 stattgefunden. Wir freuen uns darauf,
-          wenn du uns nächstes Jahr bei Roll Mit unterstützt.
+        <p class="text-lg text-charcoal-blue-500 leading-relaxed max-w-xl mx-auto mb-6">
+          Dieses Formular ist eine Vorab-Anmeldung als Helferin oder Helfer. Alle weiteren
+          Infos folgen. Du hast zu einem späteren Zeitpunkt die Möglichkeit anzugeben, wann du Zeit
+          hast und in welchem Bereich du helfen möchtest.
         </p>
+        <app-external-form-link-button
+          [href]="formularUrl"
+          label="Zur Vorab-Anmeldung"
+        />
       </div>
     </div>
   </main>
